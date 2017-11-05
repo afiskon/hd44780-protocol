@@ -38,11 +38,11 @@ void lcdCommand(uint8_t cmd) {
     lcdSend(true, cmd);
 }
 
-void lcdChar(char chr) {
+void lcdChar(const char chr) {
     lcdSend(false, (uint8_t)chr);
 }
 
-void lcdString(char* str) {
+void lcdString(const char* str) {
     while(*str != '\0') {
         lcdChar(*str);
         str++;
