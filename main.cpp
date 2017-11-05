@@ -49,8 +49,7 @@ void lcdString(const char* str) {
     }
 }
 
-void setup()
-{
+void setup() {
     pinMode(PIN_RS, OUTPUT);
     pinMode(PIN_E, OUTPUT);
     pinMode(PIN_D4, OUTPUT);
@@ -73,8 +72,7 @@ void setup()
     lcdString("LCD directly! :)");
 }
 
-void loop()
-{
+void loop() {
     /* do nothing */
     delay(100);
 }
